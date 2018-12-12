@@ -619,7 +619,7 @@ class Extended_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Ca
         if (count($matchTags) == 1)
             return $this->_redis->sMembers($matchTags[0]);
 
-        return $this->_redis->sInter($matchTags);
+        return $this->_redis->sInter(...$matchTags);
     }
 
     /**
