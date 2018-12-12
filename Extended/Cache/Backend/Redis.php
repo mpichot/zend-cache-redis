@@ -531,6 +531,7 @@ class Extended_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Ca
             Zend_Cache::throwException('CLEANING_MODE_NOT_MATCHING_TAG not implemented for Redis cache');
 
         Zend_Cache::throwException('Invalid mode for clean() method');
+        return false;
     }
 
     /**
