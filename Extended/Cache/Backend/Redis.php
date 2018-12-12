@@ -736,7 +736,7 @@ class Extended_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Ca
         $data = $this->load($id, true);
         if ($data === false)
             return false;
-        return $this->storeKey($data, $id, $extraLifetime);
+        return $this->_storeKey($data, $id, $extraLifetime);
     }
 
     /**
