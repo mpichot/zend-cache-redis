@@ -7,7 +7,7 @@
     "cache"
   ],
   "homepage": "https://github.com/everypony/zend-cache-redis",
-  "license": "New BSD",
+  "license": "BSD-3-Clause",
   "authors": [
     {
       "name": "orhideous",
