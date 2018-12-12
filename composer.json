@@ -1,21 +1,33 @@
 {
-    "name": "kalaspuff/redis-cache-zend-framework",
-    "description": "Redis cache backend for Zend Framework",
-    "keywords": ["redis", "zend"],
-    "homepage": "https://github.com/kalaspuff/redis-cache-zend-framework",
-    "license": "New BSD",
-    "authors": [
-        {
-            "name": "kalaspuff",
-            "email": "carloscar@agigen.se",
-            "homepage": "https://github.com/kalaspuff/",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "zendframework/zendframework1": ">=1.12.1"
+  "name": "everypony/zend-cache-redis",
+  "description": "Redis cache backend for Zend Framework",
+  "keywords": [
+    "redis",
+    "zend",
+    "cache"
+  ],
+  "homepage": "https://github.com/everypony/zend-cache-redis",
+  "license": "New BSD",
+  "authors": [
+    {
+      "name": "orhideous",
+      "email": "me@orhideous.name",
+      "homepage": "https://orhideous.name/",
+      "role": "Developer"
     },
-    "autoload": {
-        "classmap": ["."]
+    {
+      "name": "kalaspuff",
+      "email": "carloscar@agigen.se",
+      "homepage": "https://github.com/kalaspuff/",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "zf1/zend-cache": "^1.12.11"
+  },
+  "autoload": {
+    "classmap": [
+      "."
+    ]
+  }
 }
