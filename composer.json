@@ -1,14 +1,19 @@
 {
-  "name": "everypony/zend-cache-redis",
+  "name": "mpichot/zend-cache-redis",
   "description": "Redis cache backend for Zend Framework",
   "keywords": [
     "redis",
     "zend",
     "cache"
   ],
-  "homepage": "https://github.com/everypony/zend-cache-redis",
+  "homepage": "https://github.com/mpichot/zend-cache-redis",
   "license": "BSD-3-Clause",
   "authors": [
+    {
+      "name": "mpichot",
+      "homepage": "https://github.com/mpichot/",
+      "role": "Developer"
+    },
     {
       "name": "orhideous",
       "email": "me@orhideous.name",
@@ -23,7 +28,7 @@
     }
   ],
   "require": {
-    "zf1/zend-cache": "^1.12.11"
+    "shardj/zf1-future": "^1.14"
   },
   "autoload": {
     "classmap": [
