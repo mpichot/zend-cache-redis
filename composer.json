@@ -28,7 +28,8 @@
     }
   ],
   "require": {
-    "shardj/zf1-future": "^1.14"
+    "shardj/zf1-future": "^1.14",
+    "ext-redis": "*"
   },
   "autoload": {
     "classmap": [
