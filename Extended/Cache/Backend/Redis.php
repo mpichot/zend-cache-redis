@@ -579,15 +579,20 @@ class Extended_Cache_Backend_Redis extends Zend_Cache_Backend implements Zend_Ca
         Zend_Cache::throwException('Not possible to get available IDs on Redis cache');
     }
 
-
     /**
-     * Return an array of stored tags. Not implemented for Redis cache
+     * Return an array of stored tags
      *
      * @throws Zend_Cache_Exception
      */
-    public function getTags()
+    public function getTags ()
     {
-        Zend_Cache::throwException('Not possible to get available tags on Redis cache');
+        $_tags = $this->_redis->keys("tag__*");
+        $tags = [];
+        foreach ($_tags as $tag) {
+            $tags[] = substr($tag, 5);
+        }
+
+        return $tags;
     }
 
     /**
